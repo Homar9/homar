@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Galería</title>
+  <style>
+    .marquee-container{
+      text-align: center;
+      text-transform: capitalize;
+      font-family: Arial, Helvetica, sans-serif;
+      color: aliceblue;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgb(0,0,0,0.2);
+      transition: transform 0.03s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      transition: transform 00.3s;
+    }
+    
+  </style>
+</head>
+<body bgcolor="beige" background="https://vidabytes.com/wp-content/uploads/2020/10/HTML-1-1.jpg">
+   <div class="marquee-container">
+  <MARQUEE bgcolor = "red" width = 30% scrolldelay = 0  > galeria de imagenes.</MARQUEE>
+  </div>
+  <div class="galeria">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHzhtTKcBJh5FwYaXBkMmoeoQ6x1MGSr5eWw&s" alt="Imagen 1">
+    <img src="https://i.guim.co.uk/img/media/81de8263c4dd9add771efaf3247cac39fee4fefc/0_551_5340_3204/master/5340.jpg?width=465&dpr=1&s=none&crop=none" alt="Imagen 2">
+    <img src=" https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2018/10/Lugares-para-visitar-en-la-Ciudad-de-Guatemala-que-har%C3%A1n-que-te-enamores-de-ella.jpg"alt="Imagen 3">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsWVtQquqQ2Em3Yh4p2ljCNbpF84p8hNwdXg&s" alt="Imagen 4">
+    <img src="https://i.etsystatic.com/45778789/r/il/1d964a/5241561136/il_570xN.5241561136_dlxw.jpg" alt="Imagen 5">
+    <img src="https://fifpro.org/media/fhmfhvkx/messi-world-cup.jpg?rxy=0.48356841796117644,0.31512414378031967&width=1600&height=1024&rnd=133210253587130000" alt="Imagen 7">
+    <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/547A/production/_96462612_gettyimages-659596036.jpg.webp" alt="Imagen 8">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThgSpUwIoPmMQR66xxSW5iAtTW2ydSUE9NFg&s" alt="Imagen 9">
+    <img src="https://imageio.forbes.com/specials-images/imageserve/64d609a7e451f8dae9d9eed6/FC-Barcelona-star-Alex-Valle-could-leave-Celtic-to-join-Como-/960x0.jpg?format=jpg&width=960" alt="Imagen 9">
+    <img src="https://img.freepik.com/fotos-premium/hacker-simbolos-digitales_752237-13906.jpg?w=2000" alt="Imagen 9">
+  </div>
+
+</body>
+</html>

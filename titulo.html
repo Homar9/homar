@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi página web</title>
+  <style>
+    
+
+    body, html {
+      height: 100%;
+      display: flex;
+      font-family: Arial, Helvetica, sans-serif;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    video#bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .contenido {
+      
+      z-index: 1;
+     padding: 20;
+      text-transform: capitalize;
+      text-align: center;
+      margin-top: 30;
+      color:black;
+
+    }
+  </style>
+</head>
+<body>
+  
+  <video autoplay loop muted id="bg-video">
+    <source src="videos/hoja.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5 jajaja.
+  </video>
+
+  
+  <div class="contenido">
+    <h1>Mi página web </h1>
+    <p>Bienvenido a mi pagina.</p>
+    <p><strong>nombre:</strong> Luis homar hernandez lima <strong>carnet:</strong> 1590-25-7263</p>
+  </div>
+</body>
+</html>

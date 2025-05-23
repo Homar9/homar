@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+         video#bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+        canvas {
+            border: 2px solid rgb(252, 4, 4);
+            display: block;
+            margin: auto;
+        }
+        #score, #records {
+            text-align: center;
+            font-size: 20px;
+            margin: 10px;
+            color: aliceblue;
+        }
+        #gameOverScreen {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(4, 4, 1, 0.8);
+            color: rgb(254, 106, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        #controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+     <video autoplay loop muted id="bg-video">
+    <source src="videos/juego.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5 jajaja.
+  </video>
+
+    <div id="score">Puntuación: <span id="scoreValue">0</span></div>
+    <div id="records">Récord: <span id="recordValue">0</span></div>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    
+    <div id="gameOverScreen">
+        <h2>¡Game Over!</h2>
+        <p>Puntuación final: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()">Reintentar</button>
+      
+    </div>
+
+    <div id="controls">
+        <button onclick="changeDirection('UP')">🔼</button>
+    </div>
+    <div id="controls">
+        <button onclick="changeDirection('LEFT')">◀️</button>
+        <button onclick="changeDirection('DOWN')">🔽</button>
+        <button onclick="changeDirection('RIGHT')">▶️</button>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+</html>
